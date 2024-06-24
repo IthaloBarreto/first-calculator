@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --fonte: 'Roboto', sans-serif;
+}
+
+.calculadora {
+    padding: 8px;
+    margin: 200px auto;
+    border-radius: 8px;
+    background-color: rgb(14, 14, 14);
+    width: 350px;
+    height: 550px;
+}
+
+#display {
+    background-color: rgb(49, 49, 49);
+    width: 350px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+#previous-operation {
+    padding: 8px;
+    display: flex;
+    justify-content: end;
+    color: #c9c9c9;
+    font-size: 22px;
+    font-family: var(--fonte);
+}
+
+#current-operation {
+    padding: 8px;
+    display: flex;
+    justify-content: end;
+    color: #ffffff;
+    font-size: 28px;
+    font-family: var(--fonte);
+    align-items: flex-end;
+}
+
+#container__buttons {
+    display: grid;
+    height: 80%;
+    margin-top: 10px;
+    gap: 4px;
+    grid-template-columns: 25% 25% 25%;
+    width: 350px;
+}
+
+#container__buttons button {
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid rgb(31, 31, 31);
+    background-color: #d8d8d8;
+}
+
+#container__buttons button:hover {
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid rgb(31, 31, 31);
+    background-color: #b3b3b3;
+}
+
+#container__buttons .operation {
+    background-color: #b6855d;
+}
+
+#container__buttons .operation:hover {
+    background-color: #946d4d;
+}
+
+#container__buttons button:nth-child(1) {
+    grid-column: 1/2;
+}
+
+#container__buttons button:nth-child(19) {
+    grid-column: 3/5;
+}
